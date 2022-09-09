@@ -7,37 +7,37 @@
     cuerpo.style.opacity="1";
    });
 
-var btnPublicar =document.querySelector("#publicar");
+// var btnPublicar =document.querySelector("#publicar");
 
-btnPublicar.addEventListener("click",(e)=>{
+// btnPublicar.addEventListener("click",(e)=>{
 
-var titulo =document.querySelector("#titulo");
-var publicacion =document.querySelector("#comentario");
-if (titulo.value.length ==0) {
-     alert("no puedes dejar tu titulo vacio")
-    e.preventDefault();
-}
-else if(titulo.value.length <=3) {
-   alert("escriba un poco mas en tu titulo")
-    e.preventDefault();
-}
-else if(titulo.value.length >24) {
-    alert("no puedes escribir mas de 15 caracteres  en tu titulo eso incluye a los espacios")
-    e.preventDefault();
-}
-else if(publicacion.value.length ==0) {
-    alert("No puedes dejar  tu publicacion vacia")
-    e.preventDefault();
-}
-else if(publicacion.value.length <=5) {
-    alert("Escribe un poco mas en  tu publicacion")
-    e.preventDefault();
-}
-else if(publicacion.value.length >500) {
-    alert("no puedes escribir mas de 500 caracteres  en tu publicacion eso incluye a los espacios")
-    e.preventDefault();
-}
-});
+// var titulo =document.querySelector("#titulo");
+// var publicacion =document.querySelector("#comentario");
+// if (titulo.value.length ==0) {
+//      alert("no puedes dejar tu titulo vacio")
+//     e.preventDefault();
+// }
+// else if(titulo.value.length <=3) {
+//    alert("escriba un poco mas en tu titulo")
+//     e.preventDefault();
+// }
+// else if(titulo.value.length >24) {
+//     alert("no puedes escribir mas de 15 caracteres  en tu titulo eso incluye a los espacios")
+//     e.preventDefault();
+// }
+// else if(publicacion.value.length ==0) {
+//     alert("No puedes dejar  tu publicacion vacia")
+//     e.preventDefault();
+// }
+// else if(publicacion.value.length <=5) {
+//     alert("Escribe un poco mas en  tu publicacion")
+//     e.preventDefault();
+// }
+// else if(publicacion.value.length >500) {
+//     alert("no puedes escribir mas de 500 caracteres  en tu publicacion eso incluye a los espacios")
+//     e.preventDefault();
+// }
+// });
 
 /*FUNCION DEL BUSCADOR  */
 
