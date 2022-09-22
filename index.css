@@ -273,6 +273,19 @@ h1::after{
     margin-top: -20px;
 }
 }
+footer{
+    text-align: center;
+    padding: 10px;
+}
+footer a{
+  text-decoration: none;
+  color: #000000;transition: border 0.5s,color 0.5s;
+}
+footer a:hover{
+    color: rgb(220, 20, 60);
+    /* border-bottom: 2px solid #000000; */
+    transition: border 0.1s,color 0.5s;
+  }
 @media screen and (max-width:265px) {
     #buscador{
        width: 65%;
