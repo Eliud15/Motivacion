@@ -1,5 +1,9 @@
 
    var btnaceptar =document.querySelector(".aceptar");
+   const aparece = ()=>{
+    const flechita =document.querySelector(".flechita");
+    flechita.style.visibility='visible'
+   }
    btnaceptar.addEventListener("click",()=>{
     var sinresultado =document.querySelector(".sinresultado");
     sinresultado.style.visibility="hidden";
@@ -48,6 +52,7 @@ btnbuscar.addEventListener("click",()=>{
     if (buscador.value == "amor" ||buscador.value =="Amor" ||buscador.value =="Love" ||buscador.value =="love") {
        
         var classAmor =document.querySelectorAll(".amor");
+        aparece()
         for (let index = 0; index < classAmor.length; index++) {
             classAmor[index].style.background="#FF69B4";
             
@@ -55,21 +60,24 @@ btnbuscar.addEventListener("click",()=>{
     }
     else if(buscador.value == "motivacion" ||buscador.value =="Motivacion" || buscador.value =="motivation" || buscador.value =="Motivation"){
         var classMotivacion =document.querySelectorAll(".motivacion");
+        aparece()
         for (let index = 0; index < classMotivacion.length; index++) {
             classMotivacion[index].style.background="lawngreen";
             
         }
     }
-    else if(buscador.value == "tristeza" ||buscador.value =="Tristeza" ||buscador.value =="tristesa" ||buscador.value =="Tristesa" ||buscador.value =="sad" ||buscador.value =="Sad" 
-    ||buscador.value =="triste" ||buscador.value =="Triste" ||buscador.value =="tristes" ||buscador.value =="Tristes"  ){
-        var classTristeza =document.querySelectorAll(".tristeza");
-        for (let index = 0; index < classTristeza.length; index++) {
-            classTristeza[index].style.background="gray";
+    // else if(buscador.value == "tristeza" ||buscador.value =="Tristeza" ||buscador.value =="tristesa" ||buscador.value =="Tristesa" ||buscador.value =="sad" ||buscador.value =="Sad" 
+    // ||buscador.value =="triste" ||buscador.value =="Triste" ||buscador.value =="tristes" ||buscador.value =="Tristes"  ){
+    //     var classTristeza =document.querySelectorAll(".tristeza");
+      
+    //     for (let index = 0; index < classTristeza.length; index++) {
+    //         classTristeza[index].style.background="gray";
             
-        }
-    }
-    else if(buscador.value == "felicidad" ||buscador.value =="Felicidad" ||buscador.value =="felices" ||buscador.value =="Felices" ||buscador.value =="happiness" ||buscador.value =="Happiness" ||buscador.value =="Happy" ||buscador.value =="happy"){
+    //     }
+    // }
+    else if(buscador.value == "felicidad" ||buscador.value =="Felicidad" ||buscador.value =="felices" ||buscador.value =="Felices" ||buscador.value =="happiness" ||buscador.value =="Happiness" ||buscador.value =="Happy" ||buscador.value =="happy" ||buscador.value =="feliz" ||buscador.value =="Feliz"){
         var classFelicidad =document.querySelectorAll(".felicidad");
+        aparece()
         for (let index = 0; index < classFelicidad.length; index++) {
             classFelicidad[index].style.background="yellow";
             
@@ -77,6 +85,7 @@ btnbuscar.addEventListener("click",()=>{
     }
     else if(buscador.value == "superacion" ||buscador.value =="Superacion" ||buscador.value =="overcoming" ||buscador.value =="Overcoming" ||buscador.value =="superarse" ||buscador.value =="Superarse"){
         var classSuperarse =document.querySelectorAll(".superarse");
+        aparece()
         for (let index = 0; index < classSuperarse.length; index++) {
             classSuperarse[index].style.background="lightseagreen";
             
@@ -85,6 +94,7 @@ btnbuscar.addEventListener("click",()=>{
     else if(buscador.value == "filosofica" ||buscador.value =="Filosofica" ||buscador.value =="filosofia" ||buscador.value =="Filosofia"
      ||buscador.value =="philosophical" ||buscador.value =="Philosophical"){
         var classFilosofica =document.querySelectorAll(".filosofica");
+        aparece()
         for (let index = 0; index < classFilosofica.length; index++) {
             classFilosofica[index].style.background="olive";
             
@@ -92,9 +102,9 @@ btnbuscar.addEventListener("click",()=>{
     }
     else if(buscador.value == "cientifica" ||buscador.value =="Cientifica" ||buscador.value =="cientificas" ||buscador.value =="Cientificas" ||buscador.value =="scientific" ||buscador.value =="Scientific"){
         var classCientificas =document.querySelectorAll(".cientificas");
+        aparece()
         for (let index = 0; index < classCientificas.length; index++) {
-            classCientificas[index].style.background="white";
-            
+            classCientificas[index].style.background="white"; 
         }
     }
     else{
@@ -112,6 +122,8 @@ buscador.addEventListener("click",()=>{
     if (buscador.value == "amor" ||buscador.value =="Amor" ||buscador.value =="Love" ||buscador.value =="love") {
        
         var classAmor =document.querySelectorAll(".amor");
+        const flechita= document.querySelector('.flechita')
+        flechita.style.visibility='hidden';
         for (let index = 0; index < classAmor.length; index++) {
             classAmor[index].style.background="#fff";
             
@@ -119,21 +131,27 @@ buscador.addEventListener("click",()=>{
     }
     else if(buscador.value == "motivacion" ||buscador.value =="Motivacion" || buscador.value =="motivation" || buscador.value =="Motivation"){
         var classMotivacion =document.querySelectorAll(".motivacion");
+        const flechita= document.querySelector('.flechita')
+        flechita.style.visibility='hidden';
         for (let index = 0; index < classMotivacion.length; index++) {
             classMotivacion[index].style.background="#fff";
             
         }
     }
-    else if(buscador.value == "tristeza" ||buscador.value =="Tristeza" ||buscador.value =="tristesa" ||buscador.value =="Tristesa" ||buscador.value =="sad" ||buscador.value =="Sad"
-    ||buscador.value =="triste" ||buscador.value =="Triste" ||buscador.value =="tristes" ||buscador.value =="Tristes"){
-        var classTristeza =document.querySelectorAll(".tristeza");
-        for (let index = 0; index < classTristeza.length; index++) {
-            classTristeza[index].style.background="#fff";
+    // else if(buscador.value == "tristeza" ||buscador.value =="Tristeza" ||buscador.value =="tristesa" ||buscador.value =="Tristesa" ||buscador.value =="sad" ||buscador.value =="Sad"
+    // ||buscador.value =="triste" ||buscador.value =="Triste" ||buscador.value =="tristes" ||buscador.value =="Tristes"){
+    //     var classTristeza =document.querySelectorAll(".tristeza");
+    //     const flechita= document.querySelector('.flechita')
+    //     flechita.style.visibility='hidden';
+    //     for (let index = 0; index < classTristeza.length; index++) {
+    //         classTristeza[index].style.background="#fff";
             
-        }
-    }
-    else if(buscador.value == "felicidad" ||buscador.value =="Felicidad" ||buscador.value =="felices" ||buscador.value =="Felices" ||buscador.value =="happiness" ||buscador.value =="Happiness" ||buscador.value =="Happy" ||buscador.value =="happy"){
+    //     }
+    // }
+    else if(buscador.value == "felicidad" ||buscador.value =="Felicidad" ||buscador.value =="felices" ||buscador.value =="Felices" ||buscador.value =="happiness" ||buscador.value =="Happiness" ||buscador.value =="Happy" ||buscador.value =="happy" ||buscador.value =="feliz" ||buscador.value =="Feliz"){
         var classFelicidad =document.querySelectorAll(".felicidad");
+        const flechita= document.querySelector('.flechita')
+        flechita.style.visibility='hidden';
         for (let index = 0; index < classFelicidad.length; index++) {
             classFelicidad[index].style.background="#fff";
             
@@ -141,6 +159,8 @@ buscador.addEventListener("click",()=>{
     }
     else if(buscador.value == "superacion" ||buscador.value =="Superacion" ||buscador.value =="overcoming" ||buscador.value =="Overcoming" ||buscador.value =="superarse" ||buscador.value =="Superarse"){
         var classSuperarse =document.querySelectorAll(".superarse");
+        const flechita= document.querySelector('.flechita')
+        flechita.style.visibility='hidden';
         for (let index = 0; index < classSuperarse.length; index++) {
             classSuperarse[index].style.background="#fff";
             
@@ -149,6 +169,8 @@ buscador.addEventListener("click",()=>{
     else if(buscador.value == "filosofica" ||buscador.value =="Filosofica" ||buscador.value =="filosofia" ||buscador.value =="Filosofia"
      ||buscador.value =="philosophical" ||buscador.value =="Philosophical"){
         var classFilosofica =document.querySelectorAll(".filosofica");
+        const flechita= document.querySelector('.flechita')
+        flechita.style.visibility='hidden';
         for (let index = 0; index < classFilosofica.length; index++) {
             classFilosofica[index].style.background="#fff";
             
@@ -156,9 +178,14 @@ buscador.addEventListener("click",()=>{
     }
     else if(buscador.value == "cientifica" ||buscador.value =="Cientifica" ||buscador.value =="cientificas" ||buscador.value =="Cientificas" ||buscador.value =="scientific" ||buscador.value =="Scientific"){
         var classCientificas =document.querySelectorAll(".cientificas");
+        const flechita= document.querySelector('.flechita')
+        flechita.style.visibility='hidden';
         for (let index = 0; index < classCientificas.length; index++) {
             classCientificas[index].style.background="#fff";
             
         }
     }
+})
+document.body.addEventListener('keydown',(e)=> {
+    if(e.key === 'Enter') btnbuscar.click()
 })
